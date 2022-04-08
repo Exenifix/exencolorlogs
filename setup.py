@@ -5,7 +5,7 @@ with open("README.md") as f:
 
 setuptools.setup(
     name="exencolorlogs",
-    version="0.1",
+    version="0.2",
     description="Package for colorlogs",
     long_description=long_description,
     author="Exenifix",

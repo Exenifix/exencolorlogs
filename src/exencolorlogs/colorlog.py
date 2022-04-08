@@ -28,8 +28,8 @@ COLORS = {
 
 
 class Logger(logging.Logger):
-    def __init__(self):
-        super().__init__("BOT", logging.DEBUG)
+    def __init__(self, tag: str = "BOT"):
+        super().__init__(tag, logging.DEBUG)
         self.setLevel(logging.DEBUG)
         handler = logging.StreamHandler()
         formatter = Formatter()
