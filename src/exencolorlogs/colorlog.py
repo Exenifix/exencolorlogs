@@ -1,6 +1,9 @@
 import logging
 from enum import Enum
 
+logging.addLevelName(25, "OK")
+OK = 25
+
 
 class Color(Enum):
     BLACK = "\u001b[30m"
@@ -19,6 +22,7 @@ class Color(Enum):
 
 
 COLORS = {
+    "OK": Color.GREEN,
     "CRITICAL": Color.RED,
     "ERROR": Color.RED,
     "WARNING": Color.YELLOW,
@@ -28,18 +32,21 @@ COLORS = {
 
 
 class Logger(logging.Logger):
-    def __init__(self, tag: str = "BOT"):
-        super().__init__(tag, logging.DEBUG)
-        self.setLevel(logging.DEBUG)
+    def __init__(self, tag: str = "BOT", level: int = logging.DEBUG):
+        super().__init__(tag, level)
         handler = logging.StreamHandler()
         formatter = Formatter()
         handler.setFormatter(formatter)
         self.addHandler(handler)
+        self.log
+
+    def ok(self, message, *args, **kwargs):
+        self.log(OK, message, *args, **kwargs)
 
 
 class Formatter(logging.Formatter):
     def __init__(self):
-        super().__init__("{asctime} [{levelname}] {name}: {message}", style="{")
+        super().__init__("{asctime} [ {levelname} ] {name}: {message}", style="{")
 
     def format(self, record: logging.LogRecord):
         color = COLORS[record.levelname]
