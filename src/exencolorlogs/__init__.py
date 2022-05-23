@@ -1,5 +1,5 @@
-from .colorlog import Color, Logger
+from .colorlog import Logger, OK
 
 __title__ = "exencolorlogs"
-__version__ = 0.3
+__version__ = 0.4
 __author__ = "Exenifix"
