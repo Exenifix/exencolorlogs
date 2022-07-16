@@ -1,5 +1,3 @@
-from .colorlog import Logger, OK
+"""A module for nice looking colored logs. Licensed under MIT license (see LICENSE for details)."""
 
-__title__ = "exencolorlogs"
-__version__ = 0.4
-__author__ = "Exenifix"
+from .colorlog import Logger, OK

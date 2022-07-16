@@ -1,17 +1,16 @@
 import logging
-
-from termcolor import colored
+from exencolor import colored, Color
 
 logging.addLevelName(25, "OK")
 OK = 25
 
-COLORS: dict[str, str] = {
-    "OK": "green",
-    "CRITICAL": "red",
-    "ERROR": "red",
-    "WARNING": "yellow",
-    "INFO": "cyan",
-    "DEBUG": "white",
+COLORS: dict[str, Color] = {
+    "OK": Color.BRIGHT_GREEN,
+    "CRITICAL": Color.BRIGHT_RED,
+    "ERROR": Color.BRIGHT_RED,
+    "WARNING": Color.BRIGHT_YELLOW,
+    "INFO": Color.BRIGHT_CYAN,
+    "DEBUG": Color.WHITE,
 }
 
 
@@ -33,5 +32,5 @@ class Formatter(logging.Formatter):
 
     def format(self, record: logging.LogRecord):
         color = COLORS[record.levelname]
-        record.levelname = colored(record.levelname, color)
+        record.levelname = colored(record.levelname, foreground=color)
         return super().format(record)
