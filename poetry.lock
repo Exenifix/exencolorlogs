@@ -1,6 +1,6 @@
 [[package]]
 name = "exencolor"
-version = "1.0.2"
+version = "1.1.1"
 description = "A modern module for colored output."
 category = "main"
 optional = false
@@ -9,7 +9,7 @@ python-versions = ">=3.10,<4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "f62792c17e55c676130e38e29815d858304962c36d1d4cd8cc2fef1809405a11"
+content-hash = "e2541e7c9efa34e566a205541ec5ce534390472d9bba0363f6792f86c2ad4816"
 
 [metadata.files]
 exencolor = []

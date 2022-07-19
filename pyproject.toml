@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "exencolorlogs"
-version = "1.0"
+version = "1.0.1"
 description = "A module for nice looking colored logs."
 authors = ["Exenifix"]
 license = "MIT"
@@ -9,7 +9,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-exencolor = "^1.0.2"
+exencolor = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 
