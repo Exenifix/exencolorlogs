@@ -1,3 +1,8 @@
+![PyPI - Downloads](https://img.shields.io/pypi/dm/exencolorlogs)
+![License](https://img.shields.io/github/license/Exenifix/exencolorlogs)
+![PyPI - Version](https://img.shields.io/pypi/v/exencolorlogs)
+![CodeFactor](https://www.codefactor.io/repository/github/exenifix/exencolorlogs/badge)
+
 # ExenColorLogs
 
 A module for nice looking colored logs. Does not have much customization, just a Logger class with special formatting.
