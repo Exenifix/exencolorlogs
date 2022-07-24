@@ -9,7 +9,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-exencolor = "^1.1.1"
+exencolor = ">=1.0"
 
 [tool.poetry.dev-dependencies]
 

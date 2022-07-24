@@ -1,6 +1,6 @@
 [[package]]
 name = "exencolor"
-version = "1.1.1"
+version = "1.1.2"
 description = "A modern module for colored output."
 category = "main"
 optional = false
@@ -9,7 +9,10 @@ python-versions = ">=3.10,<4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "e2541e7c9efa34e566a205541ec5ce534390472d9bba0363f6792f86c2ad4816"
+content-hash = "6ac0e00ae7150af512752990ecceb685673104e1707d5cc0c57779994e83ab04"
 
 [metadata.files]
-exencolor = []
+exencolor = [
+    {file = "exencolor-1.1.2-py3-none-any.whl", hash = "sha256:2e9fc23977eb9e5134cbb4b241b6bd3c2efb8444ef4bcaf67eae217d76992429"},
+    {file = "exencolor-1.1.2.tar.gz", hash = "sha256:8ceb6bff6dc3caba1d8b36178e35a2cf2747809be030bd52c27e3d9dcf096f17"},
+]
