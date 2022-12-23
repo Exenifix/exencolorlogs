@@ -70,6 +70,7 @@ class FileHandler(logging.FileHandler):
             self.stream.close()
             self.stream = None  # type: ignore
             self.baseFilename = (self.baseDir / f"{today}.{self.ext}").as_posix()
+            self._lastEntryOn = today
         super().emit(record)
 
 
